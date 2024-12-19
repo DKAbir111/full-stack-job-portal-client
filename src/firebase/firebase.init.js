@@ -6,18 +6,15 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey,
-  authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
-  storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId,
+  apiKey: "AIzaSyAEdtm18Fq1hOPEH2LRwVE5qMzVoFf82oo",
+  authDomain: "job-portal-auth-4520c.firebaseapp.com",
+  projectId: "job-portal-auth-4520c",
+  storageBucket: "job-portal-auth-4520c.firebasestorage.app",
+  messagingSenderId: "240348777908",
+  appId: "1:240348777908:web:9331947fbbde4135e8f6e1"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
-
-export default auth;
+export default auth
