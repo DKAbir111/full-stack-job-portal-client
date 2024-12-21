@@ -9,11 +9,11 @@ const MyApplications = () => {
     const instance = useAxiosSecure()
 
     useEffect(() => {
-        // fetch(`http://localhost:5001/job-application?email=${user.email}`)
+        // fetch(`https://job-portal-server-for-recruiter-part3-flax-two.vercel.app/job-application?email=${user.email}`)
         //     .then(res => res.json())
         //     .then(data => setJobs(data))
 
-        // axios.get(`http://localhost:5001/job-application?email=${user.email}`, {
+        // axios.get(`https://job-portal-server-for-recruiter-part3-flax-two.vercel.app/job-application?email=${user.email}`, {
         //     withCredentials: true,
         // })
         instance.get(`/job-application?email=${user.email}`)

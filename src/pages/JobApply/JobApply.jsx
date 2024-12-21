@@ -26,7 +26,7 @@ const JobApply = () => {
             resume
         }
 
-        fetch('http://localhost:5001/job-applications', {
+        fetch('https://job-portal-server-for-recruiter-part3-flax-two.vercel.app/job-applications', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

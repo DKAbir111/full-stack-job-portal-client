@@ -37,7 +37,7 @@ const AuthProvider = ({ children }) => {
             console.log('state captured', currentUser)
             if (currentUser?.email) {
                 const user = { email: currentUser.email }
-                axios.post('http://localhost:5001/jwt', user, {
+                axios.post('https://job-portal-server-for-recruiter-part3-flax-two.vercel.app/jwt', user, {
                     withCredentials: true,
                 })
                     .then(res => {
@@ -47,7 +47,7 @@ const AuthProvider = ({ children }) => {
 
             }
             else {
-                axios.post('http://localhost:5001/logout', {}, {
+                axios.post('https://job-portal-server-for-recruiter-part3-flax-two.vercel.app/logout', {}, {
                     withCredentials: true,
                 })
                     .then(res => {
